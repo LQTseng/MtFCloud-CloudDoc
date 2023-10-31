@@ -1,10 +1,10 @@
-## SSH连接
+### SSH连接
 
 首次连接会出现接受主机密钥的弹框，如不懂选择【接受并保存】即可  
 
 ![FirstConnection](_media/images/ssh/first_connection_xs.png)
 
-### 连接报错：handshake failed 或 i/o timeout
+#### 连接报错：handshake failed 或 i/o timeout
 
 * Xshell  
 ![HandshakeFailedXS](_media/images/ssh/handshake_failed_xs.png)
@@ -13,18 +13,14 @@
 ![HandshakeFailedFS](_media/images/ssh/handshake_failed_fs.png)  
 ![IoTimeout](_media/images/ssh/io_timeout.png)
 
-::: alert-success  
-
-解决方案:  
+**解决方案:**  
 
 * 方案一：[重启系统](basic.md#重启)
 * 方案二：[重装系统](basic.md#重装系统)  
 
-:::
+#### 连接报错：Connection failed 或 Connection timed out
 
-### 连接报错：Connection failed 或 Connection timed out
-
-> 一般表示IP被墙，可以自行ping测试  
+一般表示IP被墙，可以自行ping测试  
 
 - Xshell  
 ![IpBannedXS](_media/images/ssh/ip_banned_xs.png)
@@ -32,12 +28,13 @@
 - FinalShell  
 ![IpBannedFS](_media/images/ssh/ip_banned_fs.png)
 
-::: alert-success  
-
-解决方案:  
+**解决方案:**  
 
 * 方案一：通过网页版ssh工具连接
-  * [开源 Sshwifty Web SSH Client](https://sshwifty-demo.nirui.org)
+  * [开源 Sshwifty Web SSH Client](https://sshwifty-demo.nirui.org)  
+  ![Sshwifty](_media/images/ssh/sshwifty1.png)
+  ![Sshwifty](_media/images/ssh/sshwifty2.png)  
+  
   * [群友@tb88vip提供](https://ssh.kjqg.gay)  
   ![WebSsh](_media/images/ssh/webssh.png)
 
@@ -59,10 +56,8 @@
     ![SetSshProxyFS](_media/images/ssh/set_ssh_proxy_fs.png)  
     ![UseSshProxyFS](_media/images/ssh/use_ssh_proxy_fs.png)  
     ![UseSshProxySuccFS](_media/images/ssh/use_ssh_proxy_succ_fs.png)  
-    
-:::
 
-### 其他错误补充
+#### 其他错误补充
 
 有群友反馈，`Xshell`需关闭`X11转移`功能。但我这边仅提示警告，并不影响连接，如果你在几种方案都尝试后，仍连接失败，可尝试关闭该功能。
 
